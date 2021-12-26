@@ -1,0 +1,131 @@
+p {
+  color: black;
+  font-size: 16px;
+}
+div > p {
+  color: dimgray;
+}
+div > h2 {
+  color: rgb(26, 114, 114);
+  font-size: 25px;
+}
+p,
+h2 {
+  font-style: italic;
+}
+div > h2,
+p {
+  font-weight: 200;
+}
+
+#test > * {
+  color: firebrick;
+}
+#test > p {
+  font-size: 18px;
+}
+h2,
+#test > p {
+  text-shadow: 1px 1px 2px pink;
+}
+.www {
+  font-style: italic;
+}
+p.www {
+  font-size: 12px;
+}
+.test,
+.xxx {
+  color: indigo;
+}
+.test.www.xxx {
+  font-weight: 700;
+  color: lightcoral;
+}
+p.test.www {
+  border: thick double #32a1ce;
+}
+p a {
+  color: red;
+  text-decoration: underline;
+}
+p i {
+  font-weight: bold;
+}
+ul > li {
+  font-weight: bold;
+}
+b + i {
+  text-decoration: underline;
+}
+ul + p {
+  text-shadow: 1px 1px 2px rgb(26, 114, 114);
+}
+h1 ~ p {
+  margin: 10px;
+}
+h2 ~ #test > p {
+  color: purple;
+}
+* {
+  padding-top: 2px;
+}
+* p i {
+  text-decoration-line: line-through;
+}
+*[title] {
+  text-shadow: 1px 1px 2px rgb(83, 80, 80);
+}
+*[title="title"] {
+  border-bottom: thick double saddlebrown;
+}
+a[href^="#"] {
+  color: slateblue;
+  font-weight: bold;
+}
+a[href$=".html"] {
+  color: rgb(57, 103, 10);
+  text-decoration: underline;
+}
+p[title*="hello"] {
+  margin: 5px 40px;
+}
+p[class^="top-"] {
+  border-left: thick double saddlebrown;
+  border-right: thick double saddlebrown;
+}
+.list1,
+.list2,
+.list3 {
+  width: fit-content;
+  padding-left: 20px;
+  border: 1px solid black;
+}
+.list1 li:hover {
+  cursor: pointer;
+  color: green;
+}
+.list1 li:hover + li {
+  cursor: pointer;
+  color: red;
+}
+.list2 li:hover {
+  cursor: pointer;
+  background-color: green;
+}
+.list2 li:hover + li + li {
+  cursor: pointer;
+  background-color: red;
+}
+
+.list3 li:hover {
+  cursor: pointer;
+  background-color: green;
+}
+.list3 li:hover ~ li {
+  cursor: pointer;
+  background-color: red;
+}
+:nth-last-child(-n + 1) {
+  background-color: white !important;
+}
